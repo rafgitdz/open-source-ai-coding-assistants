@@ -1,0 +1,11 @@
+# Tabby on CPU only. Works anywhere, but completions are noticeably slower:
+# fine to discover the tool, not for a live demo.
+services:
+  tabby:
+    restart: unless-stopped
+    image: registry.tabbyml.com/tabbyml/tabby
+    command: serve --model StarCoder-1B --chat-model Qwen2-1.5B-Instruct --device cpu
+    volumes:
+      - "$HOME/.tabby:/data"
+    ports:
+      - "8080:8080"

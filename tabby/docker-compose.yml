@@ -1,0 +1,19 @@
+# Tabby on an NVIDIA GPU (requires the NVIDIA Container Toolkit).
+# Completion model: StarCoder-1B. Chat model: Qwen2-1.5B-Instruct.
+# Open http://localhost:8080 once the models are downloaded (first start is slow).
+services:
+  tabby:
+    restart: unless-stopped
+    image: registry.tabbyml.com/tabbyml/tabby
+    command: serve --model StarCoder-1B --chat-model Qwen2-1.5B-Instruct --device cuda
+    volumes:
+      - "$HOME/.tabby:/data"
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

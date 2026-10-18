@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  java-kata:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: playground/java-kata
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-java@b843ebf9b913146b38da2eaa7aeddf76074ae1ad # v6.1.0
+        with:
+          distribution: temurin
+          java-version: "21"
+          cache: maven
+      - run: mvn -B -q test
+
+  configs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - run: python3 -m pip install --quiet pyyaml
+      - name: Validate YAML files
+        run: |
+          python3 -c "import sys, yaml; [yaml.safe_load(open(f)) for f in sys.argv[1:]]" \
+            continue/config.yaml continue/mcpServers/playwright-mcp.yaml \
+            aider/.aider.conf.yml tabby/docker-compose.yml tabby/docker-compose.cpu.yml
+      - name: Check shell scripts
+        run: bash -n scripts/fetch-katas.sh

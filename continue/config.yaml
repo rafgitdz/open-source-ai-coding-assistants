@@ -1,0 +1,25 @@
+# Continue.dev configuration, 100 % local through Ollama.
+# Copy this folder to the root of your project as `.continue/`, or merge it into
+# ~/.continue/config.yaml.
+#
+#   ollama pull qwen2.5-coder:7b
+#   ollama pull qwen2.5-coder:1.5b
+name: Local AI coding assistant
+version: 1.0.0
+schema: v1
+models:
+  - name: Qwen2.5 Coder 7B (chat, edit)
+    provider: ollama
+    model: qwen2.5-coder:7b
+    roles:
+      - chat
+      - edit
+      - apply
+  - name: Qwen2.5 Coder 1.5B (autocomplete)
+    provider: ollama
+    model: qwen2.5-coder:1.5b
+    roles:
+      - autocomplete
+    autocompleteOptions:
+      debounceDelay: 350
+      maxPromptTokens: 1024

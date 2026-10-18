@@ -1,0 +1,9 @@
+target/
+katas/
+.idea/
+*.iml
+.DS_Store
+.venv/
+.env
+.aider*
+!aider/.aider.conf.yml

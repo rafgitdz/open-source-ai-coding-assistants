@@ -1,0 +1,21 @@
+# Aider configuration, 100 % local through Ollama.
+# Copy this file to the root of your git repository, or to your home directory.
+#
+#   ollama pull qwen2.5-coder:7b
+#   aider
+model: ollama_chat/qwen2.5-coder:7b
+set-env:
+  - OLLAMA_API_BASE=http://localhost:11434
+
+# Every change Aider makes is a commit: `git log` is your undo button.
+auto-commits: true
+
+# Run the tests after each change and let Aider fix what it broke.
+test-cmd: mvn -q test
+auto-test: false
+
+# Give the model your team conventions, read-only.
+read:
+  - CONVENTIONS.md
+
+analytics-disable: true
