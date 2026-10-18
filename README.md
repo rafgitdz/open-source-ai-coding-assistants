@@ -74,17 +74,17 @@ scripts/      fetch-katas.sh clones the third-party projects used on stage
 The talk has evolved with the tools, from Tabby alone in 2024 to a full open
 source chain in 2025. Every recording below is public.
 
-| Year | Event | Title | Replay |
-|---|---|---|---|
-| 2025 | Codeurs en Seine | AI Coding Assistants : du premier commit au déploiement, 100 % open source | [YouTube](https://youtu.be/Zn6nWDPNfks) |
-| 2025 | Bordeaux JUG | Tabby & Continue.dev : la dream team pour un IA coding assistant | [YouTube](https://www.youtube.com/watch?v=6wwXVHNrM_o) |
-| 2025 | WAX Conference | REX AI Coding Assistant | [YouTube](https://youtu.be/mYnPxe2qrzM) |
-| 2025 | Voxxed Days Luxembourg | Aider: Pair Programming with an AI in Your Terminal! (EN) | [YouTube](https://youtu.be/9w_I8lyHIN0) |
-| 2024 | Devoxx Belgium | Tabby, my free Copilot (EN) | [YouTube](https://youtu.be/GFrkmFLU4LI) |
-| 2024 | Devoxx France | Tabby, mon Copilot libre | [YouTube](https://youtu.be/ZAVIXXQDtbM) |
-| 2024 | DevFest Strasbourg | Tabby, mon Copilot libre | [YouTube](https://youtu.be/trKDZBKo2A4) |
-| 2024 | Voxxed Days Luxembourg | Tabby, mon Copilot libre | [YouTube](https://youtu.be/tEuQ7uzquow) |
-| 2024 | Volcamp | Tabby, mon Copilot libre | [YouTube](https://youtu.be/SepRvxK54Rg) |
+| Year | Event | Title | Language | Replay |
+|---|---|---|---|---|
+| 2025 | Codeurs en Seine | AI Coding Assistants: from First Commit to Deployment, 100 % Open Source | FR | [YouTube](https://youtu.be/Zn6nWDPNfks) |
+| 2025 | Bordeaux JUG | Tabby & Continue.dev: the Dream Team for an AI Coding Assistant | FR | [YouTube](https://www.youtube.com/watch?v=6wwXVHNrM_o) |
+| 2025 | WAX Conference | AI Coding Assistant: Lessons Learned | FR | [YouTube](https://youtu.be/mYnPxe2qrzM) |
+| 2025 | Voxxed Days Luxembourg | Aider: Pair Programming with an AI in Your Terminal! | EN | [YouTube](https://youtu.be/9w_I8lyHIN0) |
+| 2024 | Devoxx Belgium | Tabby, my free Copilot | EN | [YouTube](https://youtu.be/GFrkmFLU4LI) |
+| 2024 | Devoxx France | Tabby, my free Copilot | FR | [YouTube](https://youtu.be/ZAVIXXQDtbM) |
+| 2024 | DevFest Strasbourg | Tabby, my free Copilot | FR | [YouTube](https://youtu.be/trKDZBKo2A4) |
+| 2024 | Voxxed Days Luxembourg | Tabby, my free Copilot | FR | [YouTube](https://youtu.be/tEuQ7uzquow) |
+| 2024 | Volcamp | Tabby, my free Copilot | FR | [YouTube](https://youtu.be/SepRvxK54Rg) |
 
 ## Book this talk
 
